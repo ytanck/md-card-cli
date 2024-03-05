@@ -2,45 +2,43 @@ Refs CLI
 ===
 
 <!--rehype:ignore:start-->
-[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://jaywcjlove.github.io/#/sponsor)
-[![CI](https://github.com/jaywcjlove/refs-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/refs-cli/actions/workflows/ci.yml)
-[![NPM version](https://img.shields.io/npm/v/refs-cli.svg?style=flat)](https://npmjs.org/package/refs-cli)
-[![Repo Dependents](https://badgen.net/github/dependents-repo/jaywcjlove/refs-cli)](https://github.com/jaywcjlove/refs-cli/network/dependents)
-[![Downloads](https://img.shields.io/npm/dm/refs-cli.svg?style=flat)](https://www.npmjs.com/package/refs-cli)
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://ytanck.github.io/#/sponsor)
+[![NPM version](https://img.shields.io/npm/v/md-card-cli.svg?style=flat)](https://npmjs.org/package/md-card-cli)
+[![Downloads](https://img.shields.io/npm/dm/md-card-cli.svg?style=flat)](https://www.npmjs.com/package/md-card-cli)
 <!--rehype:ignore:end-->
 
-Command line tool to generate `Quick Reference` website. This is also a tool separated from [`Quick Reference`](https://jaywcjlove.github.io/reference) to help [`Quick Reference`](https://jaywcjlove.github.io/reference) compile and generate HTML websites
+Command line tool to generate `Quick Reference` website. This is also a tool separated from [`Quick Reference`](https://ytanck.github.io/reference) to help [`Quick Reference`](https://ytanck.github.io/reference) compile and generate HTML websites
 
 <!--rehype:ignore:start-->
-[![Quick Reference](https://user-images.githubusercontent.com/1680273/201931931-d8559417-0a15-46af-a009-ec1e56e5b778.png)](https://jaywcjlove.github.io/reference)
+[![Quick Reference](https://user-images.githubusercontent.com/1680273/201931931-d8559417-0a15-46af-a009-ec1e56e5b778.png)](https://ytanck.github.io/reference)
 <!--rehype:ignore:end-->
 
 ## Document
 
-[Reference English](./docs/quickreference.md)<!--rehype:style=background: rgb(92 107 192);&class=contributing&data-info=👆See what's missing?-->   
-[Reference 中文](https://jaywcjlove.github.io/reference/docs/quickreference.html)<!--rehype:style=background: rgb(139 170 229);&class=contributing-->   
-[Django](./docs/django.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=tag&class=contributing&data-lang=Python&data-info=See what's-->
+[Reference English](./docs/quickreference.md)<!--rehype:style=background: rgb(92 107 192);&sub-title=我是副标题&class=contributing&data-info=👆See what's missing-->   
+[Reference 中文](https://ytanck.github.io/reference/docs/quickreference.html)<!--rehype:style=background: rgb(139 170 229);&class=contributing&data-lang=JavaScript-->   
+[Django](./docs/django.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=tag&class=contributing tag&data-lang=Python&data-info=See what's&data-lang=JavaScript-->
 <!--rehype:class=home-card-->
 
 ## Example Show
 
-[Bash](https://jaywcjlove.github.io/reference/docs/bash.html)<!--rehype:style=background: rgb(72 143 223);-->  
-[C](https://jaywcjlove.github.io/reference/docs/c.html)<!--rehype:style=background: rgb(92 107 192);-->  
-[C#](https://jaywcjlove.github.io/reference/docs/cs.html)<!--rehype:style=background: rgb(6 147 13);&class=contributing-->  
-[C++](https://jaywcjlove.github.io/reference/docs/cpp.html)<!--rehype:style=background: rgb(6 147 13);&class=contributing-->  
-[Dart](https://jaywcjlove.github.io/reference/docs/dart.html)<!--rehype:style=background: rgb(64 196 255);-->  
-[Docker](https://jaywcjlove.github.io/reference/docs/docker.html)<!--rehype:style=background: rgb(72 143 223);-->  
-[Dockerfile](https://jaywcjlove.github.io/reference/docs/dockerfile.html)<!--rehype:style=background: rgb(0 72 153);&class=tag&data-lang=Docker-->  
-[Django](https://jaywcjlove.github.io/reference/docs/djiango.html)<!--rehype:style=background: rgb(12 75 51);&class=contributing tag&data-lang=Python-->  
-[Flutter](https://jaywcjlove.github.io/reference/docs/flutter.html)<!--rehype:style=background-image: linear-gradient(to left, rgba(236 72 153 / var(\-\-bg\-opacity)), rgba(167 139 250 / var(\-\-bg\-opacity)));&class=contributing tag&data-lang=Dart-->  
-[Golang](https://jaywcjlove.github.io/reference/docs/golang.html)<!--rehype:style=background-image: linear-gradient(to left, rgba(74 222 128 / var(\-\-bg\-opacity)), rgba(59 130 246 / var(\-\-bg\-opacity)));-->  
+[Bash](https://ytanck.github.io/reference/docs/bash.html)<!--rehype:style=background: rgb(72 143 223);-->  
+[C](https://ytanck.github.io/reference/docs/c.html)<!--rehype:style=background: rgb(92 107 192);-->  
+[C#](https://ytanck.github.io/reference/docs/cs.html)<!--rehype:style=background: rgb(6 147 13);&class=contributing-->  
+[C++](https://ytanck.github.io/reference/docs/cpp.html)<!--rehype:style=background: rgb(6 147 13);&class=contributing-->  
+[Dart](https://ytanck.github.io/reference/docs/dart.html)<!--rehype:style=background: rgb(64 196 255);-->  
+[Docker](https://ytanck.github.io/reference/docs/docker.html)<!--rehype:style=background: rgb(72 143 223);-->  
+[Dockerfile](https://ytanck.github.io/reference/docs/dockerfile.html)<!--rehype:style=background: rgb(0 72 153);&class=tag&data-lang=Docker-->  
+[Django](https://ytanck.github.io/reference/docs/djiango.html)<!--rehype:style=background: rgb(12 75 51);&class=contributing tag&data-lang=Python-->  
+[Flutter](https://ytanck.github.io/reference/docs/flutter.html)<!--rehype:style=background-image: linear-gradient(to left, rgba(236 72 153 / var(\-\-bg\-opacity)), rgba(167 139 250 / var(\-\-bg\-opacity)));&class=contributing tag&data-lang=Dart-->  
+[Golang](https://ytanck.github.io/reference/docs/golang.html)<!--rehype:style=background-image: linear-gradient(to left, rgba(74 222 128 / var(\-\-bg\-opacity)), rgba(59 130 246 / var(\-\-bg\-opacity)));-->  
 <!--rehype:class=home-card-->
 
 <!--rehype:ignore:start-->
 ## Command Help
 
 ```bash
-Usage: refs-cli [output-dir] [--help|h]
+Usage: md-card-cli [output-dir] [--help|h]
 
   Displays help information.
 
@@ -54,12 +52,12 @@ Options:
 
 Example:
 
-  $ npx refs-cli
-  $ refs-cli --watch
-  $ refs-cli --output website
-  $ refs-cli
+  $ npx md-card-cli
+  $ md-card-cli --watch
+  $ md-card-cli --output website
+  $ md-card-cli
 
-refs-cli@v0.0.1
+md-card-cli@v0.0.1
 ```
 
 ## Config
@@ -70,7 +68,7 @@ Store `.refsrc.json` in the root directory of the project
 {
   "title": "Refs CLI",
   "description": "{{description}}. Sharing Quick Reference Cheat Sheets for Developers",
-  "keywords": "reference-cli,reference,refs-cli,refs,cli",
+  "keywords": "reference-cli,reference,md-card-cli,refs,cli",
   "data-info": "👆👆need your participation",
   "search": {
     "label": "Search",
@@ -81,15 +79,15 @@ Store `.refsrc.json` in the root directory of the project
     "label": "Edit"
   },
   "github": {
-    "url": "https://github.com/jaywcjlove/refs-cli"
+    "url": "https://github.com/ytanck/md-card-cli"
   },
   "home": {
     "label": "Home",
-    "url": "https://jaywcjlove.github.io/refs-cli"
+    "url": "https://ytanck.github.io/md-card-cli"
   },
   "giscus": {
     "src": "https://giscus.app/client.js",
-    "data-repo": "jaywcjlove/refs-cli",
+    "data-repo": "ytanck/md-card-cli",
     "data-repo-id": "R_kgDOIfibtA",
     "data-category": "Q&A",
     "data-category-id": "DIC_kwDOIfibtM4CZObA",
@@ -115,7 +113,7 @@ Support [JSON](https://www.json.org), [JSONC](https://github.com/microsoft/node-
 ```toml
 title = "Refs CLI"
 description = "{{description}}. Sharing Quick Reference Cheat Sheets for Developers"
-keywords = "reference-cli,reference,refs-cli,refs,cli"
+keywords = "reference-cli,reference,md-card-cli,refs,cli"
 data-info = "👆👆need your participation"
 [search]
   label = "Search"
@@ -125,10 +123,10 @@ data-info = "👆👆need your participation"
 [editor]
   label = "Edit"
 [github]
-  url = "https://github.com/jaywcjlove/refs-cli"
+  url = "https://github.com/ytanck/md-card-cli"
 [home]
   label = "Home"
-  url = "https://jaywcjlove.github.io/refs-cli"
+  url = "https://ytanck.github.io/md-card-cli"
 ```
 
 Support for more config loading.
@@ -157,14 +155,14 @@ refs.config.cjs            refs.config.mjs
 See [Quick Reference](./docs/quickreference.md) for how to get started. As always, thanks to our amazing contributors!
 <!--rehype:style=padding-bottom:1rem;-->
 
-<!--GAMFC--><a href="https://github.com/jaywcjlove" title="小弟调调">
+<!--GAMFC--><a href="https://github.com/ytanck" title="小弟调调">
   <img src="https://avatars.githubusercontent.com/u/1680273?v=4" width="42;" alt="小弟调调"/>
 </a>
 <a href="https://github.com/renxia" title="任侠">
   <img src="https://avatars.githubusercontent.com/u/2276421?v=4" width="42;" alt="任侠"/>
 </a><!--GAMFC-END-->
 
-List of contributors, automatically generated by [contributors](https://github.com/jaywcjlove/github-action-contributors)
+List of contributors, automatically generated by [contributors](https://github.com/ytanck/github-action-contributors)
 <!--rehype:style=padding-top:1rem;-->
 
 ## Mirror site of Quick Reference1
@@ -183,5 +181,5 @@ List of contributors, automatically generated by [contributors](https://github.c
 <!--rehype:ignore:start-->
 ## License
 
-MIT © [Kenny Wong](https://github.com/jaywcjlove)
+MIT © [Kenny Wong](https://github.com/ytanck)
 <!--rehype:ignore:end-->

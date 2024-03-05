@@ -1,14 +1,14 @@
 {
-  "name": "refs-cli",
+  "name": "md-card-cli",
   "version": "1.5.2",
   "description": "Command line tool to generate Quick Reference website.",
-  "homepage": "https://jaywcjlove.github.io/refs-cli/",
-  "funding": "https://jaywcjlove.github.io/#/sponsor",
-  "author": "jaywcjlove",
+  "homepage": "https://github.com/ytanck/md-card-cli/",
+  "funding": "https://ytanck.github.io",
+  "author": "ytanck",
   "license": "MIT",
   "type": "module",
   "bin": {
-    "refs-cli": "./lib/cli.js"
+    "md-card-cli": "./lib/cli.js"
   },
   "scripts": {
     "prepare": "husky install",
@@ -21,15 +21,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jaywcjlove/refs-cli.git"
+    "url": "https://github.com/ytanck/md-card-cli.git"
   },
-  "keywords": [
-    "reference-cli",
-    "reference",
-    "refs-cli",
-    "refs",
-    "cli"
-  ],
+  "keywords": ["md-card-cli,reference,refs-cli,markdown2html,html2card-cli"],
   "engines": {
     "node": ">=16.0.0"
   },

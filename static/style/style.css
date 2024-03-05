@@ -420,6 +420,7 @@ body.home .max-container a.home-button:visited:hover {
 .home-card :is(a.contributing, a.tag) {
   position: relative;
 }
+
 .home-card a.contributing::after {
   color: var(--color-fg-muted);
   content: attr(data-info);
@@ -438,7 +439,7 @@ body.home .max-container a.home-button:visited:hover {
 }
 .home-card a.contributing:hover:after {
   color: var(--color-fg-muted);
-  animation: contributing-move 0.1s infinite;
+  animation: contributing-move 0.5s infinite;
 }
 @keyframes contributing-move {
   0% {
@@ -482,8 +483,8 @@ body.home .max-container a.home-button:visited:hover {
   gap: 0.5rem;
   cursor: pointer;
   border-radius: 0.5rem;
-  padding: 0rem 1rem;
-  height: 4rem;
+  padding: 0rem 1rem .5rem;
+  height: 6rem;
   box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   color: var(--color-fg-default);
   --text-opacity: 0.75;
@@ -493,6 +494,20 @@ body.home .max-container a.home-button:visited:hover {
   background-size: 100% 100%;
   transition: all 0.3s;
   text-decoration: none;
+}
+.home-card a::before {
+  content: attr(sub-title);
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  bottom: .8rem;
+  max-width: 90%;
+  height: 1rem;
+  line-height: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
 }
 .home-card a:hover {
   --bg-opacity: 1 !important;

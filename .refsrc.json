@@ -1,7 +1,7 @@
 {
-  "title": "Refs CLI",
+  "title": "md-card-cli",
   "description": "{{description}}. Sharing Quick Reference Cheat Sheets for Developers",
-  "keywords": "reference-cli,reference,refs-cli,refs,cli",
+  "keywords": "md-card-cli,reference,refs-cli,markdown2html,html2card-cli",
   "data-info": "👆👆need your participation",
   "search": {
     "label": "Search",
@@ -12,15 +12,15 @@
     "label": "Edit"
   },
   "github": {
-    "url": "https://github.com/jaywcjlove/refs-cli"
+    "url": "https://github.com/ytanck/md-card-cli"
   },
   "home": {
     "label": "Home",
-    "url": "https://jaywcjlove.github.io/refs-cli"
+    "url": "https://ytanck.github.io/reference"
   },
   "giscus": {
     "src": "https://giscus.app/client.js",
-    "data-repo": "jaywcjlove/refs-cli",
+    "data-repo": "ytanck/md-card-cli",
     "data-repo-id": "R_kgDOIfibtA",
     "data-category": "Q&A",
     "data-category-id": "DIC_kwDOIfibtM4CZObA",

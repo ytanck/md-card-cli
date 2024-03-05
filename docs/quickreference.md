@@ -1,11 +1,11 @@
 Quick Reference Cheatsheet
 ===
 
-[![CI](https://github.com/jaywcjlove/refs-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/refs-cli/actions/workflows/ci.yml)
-[![NPM version](https://img.shields.io/npm/v/refs-cli.svg?style=flat)](https://www.npmjs.com/package/refs-cli)
-[![Downloads](https://img.shields.io/npm/dm/refs-cli.svg?style=flat)](https://www.npmjs.com/package/refs-cli)
-[![Repo Dependents](https://badgen.net/github/dependents-repo/jaywcjlove/refs-cli)](https://github.com/jaywcjlove/refs-cli/network/dependents)
-[![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/jaywcjlove/refs-cli)
+[![CI](https://github.com/ytanck/md-card-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/ytanck/md-card-cli/actions/workflows/ci.yml)
+[![NPM version](https://img.shields.io/npm/v/md-card-cli.svg?style=flat)](https://www.npmjs.com/package/md-card-cli)
+[![Downloads](https://img.shields.io/npm/dm/md-card-cli.svg?style=flat)](https://www.npmjs.com/package/md-card-cli)
+[![Repo Dependents](https://badgen.net/github/dependents-repo/ytanck/md-card-cli)](https://github.com/ytanck/md-card-cli/network/dependents)
+[![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/ytanck/md-card-cli)
 
 Here's a style reference you can use on your **Quick Reference** cheat sheet!
 <!--rehype:style=padding-top: 12px;-->
@@ -16,12 +16,12 @@ Getting Started
 
 ### Local compilation preview
 
-Clone the repository to the local debug page. See the [Contributing Guide](https://github.com/jaywcjlove/reference/blob/main/CONTRIBUTING.md) for how to get started.
+Clone the repository to the local debug page. See the [Contributing Guide](https://github.com/ytanck/reference/blob/main/CONTRIBUTING.md) for how to get started.
 
 #### Clone repository
 
 ```shell
-git clone git@github.com:jaywcjlove/reference.git
+git clone git@github.com:ytanck/reference.git
 ```
 <!--rehype:className=wrap-text -->
 
@@ -92,7 +92,7 @@ The homepage (`README.md`) is stored in the root directory of the warehouse, and
 
 The home navigation icon is stored in the `scripts/assets` directory. If your cheat list is defined as `docs/cron.md`, then your icon is defined as `cron.svg` and stored in the `scripts/assets` directory , recompile the home page when the row menu has icons.
 
-- Icons are stored in the [`scripts/assets`](https://github.com/jaywcjlove/reference/blob/main/scripts/assets) directory
+- Icons are stored in the [`scripts/assets`](https://github.com/ytanck/reference/blob/main/scripts/assets) directory
 - The name of the image is consistent with the name of the manifest `cron.md` -> `cron.svg` (note capitalization)
 - SVG icon size `<svg height="1em" width="1em"`
 - SVG icon color uses inherited color value `<svg fill="currentColor"`
@@ -123,7 +123,7 @@ Add `class=tag&data-lang=Python` class name and parameters, it will be marked _`
 ### Command Help
 
 ```bash
-Usage: refs-cli [output-dir] [--help|h]
+Usage: md-card-cli [output-dir] [--help|h]
 
   Displays help information.
 
@@ -137,12 +137,12 @@ Options:
 
 Example:
 
-  $ npx refs-cli
-  $ refs-cli --watch
-  $ refs-cli --output website
-  $ refs-cli
+  $ npx md-card-cli
+  $ md-card-cli --watch
+  $ md-card-cli --output website
+  $ md-card-cli
 
-refs-cli@v0.0.1
+md-card-cli@v0.0.1
 ```
 
 ### Config
@@ -153,7 +153,7 @@ Store `.refsrc.json` in the root directory of the project
 {
   "title": "Quick Reference",
   "description": "{{description}}. Sharing Quick Reference Cheat Sheets for Developers",
-  "keywords": "reference-cli,reference,refs-cli,refs,cli",
+  "keywords": "reference-cli,reference,md-card-cli,refs,cli",
   "data-info": "👆👆need your participation",
   "search": {
     "label": "Search",
@@ -164,11 +164,11 @@ Store `.refsrc.json` in the root directory of the project
     "label": "Edit"
   },
   "github": {
-    "url": "https://github.com/jaywcjlove/refs-cli"
+    "url": "https://github.com/ytanck/md-card-cli"
   },
   "home": {
     "label": "Home",
-    "url": "https://jaywcjlove.github.io/refs-cli"
+    "url": "https://ytanck.github.io/md-card-cli"
   },
   "footer": "<br />备案号：<a href=\"#\">沪ICP备202200000号-1</a>",
   "license": "Support for HTML strings"
@@ -182,7 +182,7 @@ Support [JSON](https://www.json.org), [JSONC](https://github.com/microsoft/node-
 ```toml
 title = "Refs CLI"
 description = "{{description}}. Sharing Quick Reference Cheat Sheets for Developers"
-keywords = "reference-cli,reference,refs-cli,refs,cli"
+keywords = "reference-cli,reference,md-card-cli,refs,cli"
 data-info = "👆👆need your participation"
 [search]
   label = "Search"
@@ -192,10 +192,10 @@ data-info = "👆👆need your participation"
 [editor]
   label = "Edit"
 [github]
-  url = "https://github.com/jaywcjlove/refs-cli"
+  url = "https://github.com/ytanck/md-card-cli"
 [home]
   label = "Home"
-  url = "https://jaywcjlove.github.io/refs-cli"
+  url = "https://ytanck.github.io/md-card-cli"
 ```
 
 ### Support for more config loading
@@ -364,7 +364,7 @@ Code line highlighting can be used together with code line numbers.
 
 ### Tooltips
 
-> [When the mouse moves over it, there is a hint](https://github.com/jaywcjlove/reference) _Tip content of Tooltips_<!--rehype:tooltips-->
+> [When the mouse moves over it, there is a hint](https://github.com/ytanck/reference) _Tip content of Tooltips_<!--rehype:tooltips-->
 
 Add annotation configuration `<!--rehype:tooltips-->` to add a Tooltips hint.
 

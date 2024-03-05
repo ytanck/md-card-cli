@@ -9,7 +9,7 @@ export const __filename = fileURLToPath(import.meta.url);
 export const OUTOUT = path.resolve(process.cwd(), 'dist');
 export const DOCS = path.resolve(process.cwd(), 'docs');
 /** 搜索数据路径 */
-export const SEARCH_DATA_CACHE = path.resolve(process.cwd(), 'node_modules/.cache/refs-cli/data.json');
+export const SEARCH_DATA_CACHE = path.resolve(process.cwd(), 'node_modules/.cache/md-card-cli/data.json');
 export async function copyCSSFile(options: Options) {
   await fs.copy(path.resolve(options.static_path, './style'), path.resolve(options.output, 'style'));
 }
@@ -129,7 +129,7 @@ export async function createHTML(files: IFileDirStat[] = [], opts: Options, num 
 export const pkg = fs.readJSONSync(path.resolve(__filename, '../../../package.json'));
 
 export const helpStr = `
-  Usage: \x1b[34;1mrefs-cli\x1b[0m [output-dir] [--help|h]
+  Usage: \x1b[34;1mmd-card-cli\x1b[0m [output-dir] [--help|h]
 
     Displays help information.
 
@@ -143,10 +143,10 @@ export const helpStr = `
 
   Example:
 
-    $\x1b[35m npx\x1b[0m refs-cli
-    $\x1b[35m refs-cli\x1b[0m --watch
-    $\x1b[35m refs-cli\x1b[0m --output website
-    $\x1b[35m refs-cli\x1b[0m 
+    $\x1b[35m npx\x1b[0m md-card-cli
+    $\x1b[35m md-card-cli\x1b[0m --watch
+    $\x1b[35m md-card-cli\x1b[0m --output website
+    $\x1b[35m md-card-cli\x1b[0m 
 
-  refs-cli@v${pkg.version}
+  md-card-cli@v${pkg.version}
 `;

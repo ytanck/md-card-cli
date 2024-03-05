@@ -22,9 +22,11 @@ export function homeCardIcons(
         : [properties.class].flat()
       : [];
   if (isHome && node && node.type === 'element' && className.includes('contributing')) {
-    node.properties['data-info'] = node.properties['data-info'] || config['data-info'] || '👆need your participation';
+    node.properties['data-info'] = node.properties['data-info'] || config['data-info'];
+
   }
   if (isHome && node && node.type === 'element' && className.includes('home-card')) {
+    // node.properties['sub-title'] = node.properties['sub-title'] || config['sub-title'];
     node.children = node.children.map((child) => {
       const href = (child.type === 'element' ? child.properties?.href : '') as string;
       if (href && (href.endsWith('.md') || /^https?:\/\//.test(href)) && child.type === 'element') {
