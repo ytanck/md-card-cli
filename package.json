@@ -1,0 +1,71 @@
+{
+  "name": "refs-cli",
+  "version": "1.5.2",
+  "description": "Command line tool to generate Quick Reference website.",
+  "homepage": "https://jaywcjlove.github.io/refs-cli/",
+  "funding": "https://jaywcjlove.github.io/#/sponsor",
+  "author": "jaywcjlove",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "refs-cli": "./lib/cli.js"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,json}'",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "help": "node ./lib/cli.js --help",
+    "start": "node ./lib/cli.js -w",
+    "doc": "node ./lib/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaywcjlove/refs-cli.git"
+  },
+  "keywords": [
+    "reference-cli",
+    "reference",
+    "refs-cli",
+    "refs",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "src",
+    "lib",
+    "static"
+  ],
+  "dependencies": {
+    "@uiw/formatter": "^2.0.0",
+    "@wcj/markdown-to-html": "^2.2.0",
+    "auto-config-loader": "^1.7.1",
+    "chokidar": "^3.5.3",
+    "dotenv": "^16.0.3",
+    "fs-extra": "^11.0.0",
+    "markdownlint-cli": "^0.32.2",
+    "minimist": "^1.2.7",
+    "recursive-readdir-files": "^2.3.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-document": "^6.1.0",
+    "rehype-parse": "^8.0.4",
+    "rehype-raw": "^6.1.1",
+    "rehype-rewrite": "^3.0.6",
+    "rehype-slug": "^5.0.1",
+    "remark-gemoji": "^7.0.1",
+    "unified": "^10.1.2",
+    "unist-util-visit": "^4.1.1",
+    "vfile": "^5.3.5"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.0",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.11.9",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.3"
+  }
+}

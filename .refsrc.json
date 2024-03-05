@@ -1,0 +1,37 @@
+{
+  "title": "Refs CLI",
+  "description": "{{description}}. Sharing Quick Reference Cheat Sheets for Developers",
+  "keywords": "reference-cli,reference,refs-cli,refs,cli",
+  "data-info": "👆👆need your participation",
+  "search": {
+    "label": "Search",
+    "placeholder": "Search for cheatsheet",
+    "cancel": "Cancel"
+  },
+  "editor": {
+    "label": "Edit"
+  },
+  "github": {
+    "url": "https://github.com/jaywcjlove/refs-cli"
+  },
+  "home": {
+    "label": "Home",
+    "url": "https://jaywcjlove.github.io/refs-cli"
+  },
+  "giscus": {
+    "src": "https://giscus.app/client.js",
+    "data-repo": "jaywcjlove/refs-cli",
+    "data-repo-id": "R_kgDOIfibtA",
+    "data-category": "Q&A",
+    "data-category-id": "DIC_kwDOIfibtM4CZObA",
+    "data-mapping": "pathname",
+    "data-strict": "0",
+    "data-reactions-enabled": "1",
+    "data-emit-metadata": "0",
+    "data-input-position": "bottom",
+    "data-theme": "preferred_color_scheme",
+    "data-lang": "en",
+    "crossorigin": "anonymous",
+    "async": true
+  }
+}
