@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Command line tool to generate Quick Reference website.",
   "homepage": "https://github.com/ytanck/md-card-cli/",
-  "funding": "https://ytanck.github.io",
   "author": "ytanck",
   "license": "MIT",
   "type": "module",
