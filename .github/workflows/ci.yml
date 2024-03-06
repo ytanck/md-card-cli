@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'jaywcjlove/refs-cli'
+    if: github.repository == 'ytking/reposname'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -41,13 +41,6 @@ jobs:
           commit_message: ${{ github.event.head_commit.message }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-
-      - name: Generate Changelog
-        id: changelog
-        uses: jaywcjlove/changelog-generator@main
-        with:
-          filter-author: (小弟调调™)
-          filter: (^[\s]+?[R|r]elease)|(^[R|r]elease)
 
       - name: Create Release
         uses: ncipollo/release-action@v1

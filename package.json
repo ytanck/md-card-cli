@@ -1,7 +1,7 @@
 {
   "name": "md-card-cli",
   "version": "1.0.0",
-  "description": "Command line tool to generate Quick Reference website.",
+  "description": "Command line tool to convert markdown to a card-html website.",
   "homepage": "https://github.com/ytanck/md-card-cli/",
   "author": "ytanck",
   "license": "MIT",

@@ -70,7 +70,7 @@ Store `.refsrc.json` in the root directory of the project
   "data-info": "👆click me !",
   "search": {
     "label": "Search",
-    "placeholder": "Search for cheatsheet",
+    "placeholder": "Search for card",
     "cancel": "Cancel"
   },
   "network": {
