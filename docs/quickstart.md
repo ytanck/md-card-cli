@@ -14,9 +14,6 @@ Getting Started
 ---
 
 
-### Local compilation preview
-
-Clone the repository to the local debug page. See the [Contributing Guide](https://github.com/ytanck/reference/blob/main/CONTRIBUTING.md) for how to get started.
 
 #### Clone repository
 
@@ -101,11 +98,11 @@ The home navigation icon is stored in the `scripts/assets` directory. If your ch
 ### Home prompt configuration
 
 ```markdown
-[Django](./docs/djiango.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=contributing-->
+[Django](./docs/djiango.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=info-->
 ```
 <!--rehype:className=wrap-text-->
 
-Add `contributing` class name, it will add `👆needs your participation to be perfected` by default at the bottom of the card
+Add `info` class name, it will add `👆needs your recormend` by default at the bottom of the card
 
 ```markdown
 class=tag&data-info=👆See what's missing?
@@ -114,11 +111,11 @@ class=tag&data-info=👆See what's missing?
 The above example changes the default prompt to:`👆See what's missing?`
 
 ```markdown
-[Django](./docs/djiango.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=tag&data-lang=Python-->
+[Django](./docs/djiango.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=tag&data-tag=Python-->
 ```
 <!--rehype:className=wrap-text-->
 
-Add `class=tag&data-lang=Python` class name and parameters, it will be marked _`Python`_ in the upper right corner of the card
+Add `class=tag&data-tag=Python` class name and parameters, it will be marked _`Python`_ in the upper right corner of the card
 
 ### Command Help
 

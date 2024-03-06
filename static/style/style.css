@@ -417,11 +417,11 @@ body.home .max-container a.home-button:visited:hover {
 .home-card br {
   display: none;
 }
-.home-card :is(a.contributing, a.tag) {
+.home-card :is(a.info, a.tag, a.subtitle) {
   position: relative;
 }
 
-.home-card a.contributing::after {
+.home-card a.info::after {
   color: var(--color-fg-muted);
   content: attr(data-info);
   display: block;
@@ -437,11 +437,11 @@ body.home .max-container a.home-button:visited:hover {
   text-align: left;
   width: 100%;
 }
-.home-card a.contributing:hover:after {
+.home-card a.info:hover:after {
   color: var(--color-fg-muted);
-  animation: contributing-move 0.5s infinite;
+  animation: info-move 0.5s infinite;
 }
-@keyframes contributing-move {
+@keyframes info-move {
   0% {
     transform: translate(0px, 0px);
   }
@@ -454,7 +454,7 @@ body.home .max-container a.home-button:visited:hover {
 }
 
 .home-card a.tag::before {
-  content: attr(data-lang);
+  content: attr(data-tag);
   display: block;
   position: absolute;
   font-size: 10px;
@@ -462,7 +462,7 @@ body.home .max-container a.home-button:visited:hover {
   top: 6px;
   background: rgba(255 255 255 / 0.3);
   border-radius: 3px;
-  padding: 1px 3px 2px 3px;
+  padding: 0px 3px 2px 3px;
   transition: all 0.3s;
 }
 .home-card a.tag:hover:before {
@@ -496,7 +496,7 @@ body.home .max-container a.home-button:visited:hover {
   text-decoration: none;
 }
 .home-card a::before {
-  content: attr(sub-title);
+  content: attr(data-subtitle);
   display: block;
   position: absolute;
   font-size: 12px;

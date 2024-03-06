@@ -1,6 +1,6 @@
 import path from 'path';
 import * as dotenv from 'dotenv';
-import { github, editor, home } from './logo.js';
+import { github, network, home } from './logo.js';
 import { getSVGNode } from '../utils/getSVGNode.js';
 import { darkMode } from './darkMode.js';
 import { Option as InitOption } from './search.js';
@@ -38,18 +38,19 @@ type MenuData = {
 };
 
 export function header(options: Option = {}): Element {
-  const ICONS_PATH = path.resolve(options.static_path, './assets/quickreference.svg');
+  const ICONS_PATH = path.resolve(options.static_path, './assets/quickstart.svg');
   const ICONS_SEARCH_PATH = path.resolve(options.static_path, './assets/search.svg');
   const svgNode = getSVGNode(ICONS_PATH);
   const svgSearchNode = getSVGNode(ICONS_SEARCH_PATH);
-  const githubEditButton = options.githubURL
+
+  const otherSite = options.githubURL
     ? [
         {
           menu: true,
-          href: options.githubURL,
+          href: options.config.network?.url,
           target: '__blank',
-          label: options.config.editor?.label || 'Edit',
-          children: [editor],
+          label: options.config.network?.label || 'other',
+          children: [network],
         },
       ]
     : [];
@@ -88,7 +89,7 @@ export function header(options: Option = {}): Element {
       ],
     },
     ...getReferrals(options),
-    ...githubEditButton,
+    ...otherSite,
     ...darkMode(options),
   ];
   if (options.config?.github?.url) {

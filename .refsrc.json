@@ -2,14 +2,11 @@
   "title": "md-card-cli",
   "description": "{{description}}. Sharing Quick Reference Cheat Sheets for Developers",
   "keywords": "md-card-cli,reference,refs-cli,markdown2html,html2card-cli",
-  "data-info": "👆👆need your participation",
+  "data-info": "👆👆 click me",
   "search": {
     "label": "Search",
     "placeholder": "Search for cheatsheet",
     "cancel": "Cancel"
-  },
-  "editor": {
-    "label": "Edit"
   },
   "github": {
     "url": "https://github.com/ytanck/md-card-cli"
@@ -17,6 +14,11 @@
   "home": {
     "label": "Home",
     "url": "https://ytanck.github.io/reference"
+  },
+  "network": {
+    "label": "network",
+    "url": "https://baidu.com",
+    "disabled": false
   },
   "giscus": {
     "src": "https://giscus.app/client.js",

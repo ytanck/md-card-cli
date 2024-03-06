@@ -21,12 +21,14 @@ export function homeCardIcons(
         ? properties.class.split(' ')
         : [properties.class].flat()
       : [];
-  if (isHome && node && node.type === 'element' && className.includes('contributing')) {
+  if (isHome && node && node.type === 'element' && className.includes('info')) {
     node.properties['data-info'] = node.properties['data-info'] || config['data-info'];
-
   }
+  if (isHome && node && node.type === 'element' && className.includes('subtitle')) {
+    node.properties['data-subtitle'] = node.properties['data-subtitle'] || '';
+  }
+
   if (isHome && node && node.type === 'element' && className.includes('home-card')) {
-    // node.properties['sub-title'] = node.properties['sub-title'] || config['sub-title'];
     node.children = node.children.map((child) => {
       const href = (child.type === 'element' ? child.properties?.href : '') as string;
       if (href && (href.endsWith('.md') || /^https?:\/\//.test(href)) && child.type === 'element') {
@@ -40,7 +42,7 @@ export function homeCardIcons(
           color = str.replace(COLOR_REG, '$2');
           return str.replace(/(\);)/, '/ var(--bg-opacity)$1');
         });
-        const tags = child.properties['data-lang'] as string;
+        const tags = child.properties['data-tag'] as string;
         const labelNode: Element = {
           type: 'element',
           tagName: 'span',

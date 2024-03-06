@@ -30,9 +30,10 @@ export interface Config {
     placeholder: string;
     cancel: string;
   };
-  editor?: {
+  network?: {
     label: string;
     disabled?: boolean;
+    url: string;
   };
   github?: {
     url: string;
@@ -83,12 +84,11 @@ export async function createHTML(files: IFileDirStat[] = [], opts: Options, num 
   }
   ++num;
   const githubURL =
-    opts.config.github?.url && opts.config.editor?.disabled !== true
+    opts.config.github?.url && opts.config.network?.disabled !== true
       ? `${opts.config.github.url || opts.config.github}/blob/main/${path
           .relative(process.cwd(), dataFile.path)
           .replace(path.sep, '/')}`
       : '';
-
   const mdstr = await fs.readFile(dataFile.path);
   const htmlPath = path.relative(DOCS, dataFile.path);
   const outputHTMLPath = path

@@ -1,6 +1,6 @@
 {
   "name": "md-card-cli",
-  "version": "1.5.2",
+  "version": "1.0.0",
   "description": "Command line tool to generate Quick Reference website.",
   "homepage": "https://github.com/ytanck/md-card-cli/",
   "funding": "https://ytanck.github.io",
@@ -23,7 +23,7 @@
     "type": "git",
     "url": "https://github.com/ytanck/md-card-cli.git"
   },
-  "keywords": ["md-card-cli,reference,refs-cli,markdown2html,html2card-cli"],
+  "keywords": ["md-card-cli","reference","refs-cli","markdown2html","html2card-cli"],
   "engines": {
     "node": ">=16.0.0"
   },
