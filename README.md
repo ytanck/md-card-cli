@@ -73,8 +73,9 @@ Store `.refsrc.json` in the root directory of the project
     "placeholder": "Search for cheatsheet",
     "cancel": "Cancel"
   },
-  "editor": {
-    "label": "Edit"
+  "network": {
+    "label": "Blog",
+    "url": "site"
   },
   "github": {
     "url": "https://github.com/ytanck/md-card-cli"
@@ -118,8 +119,9 @@ data-info = "👆click me"
   placeholder = "Search for content"
   cancel = "Cancel"
 
-[editor]
-  label = "Edit"
+[network]
+  label = "Blog"
+  url = "site"
 [github]
   url = "https://github.com/ytanck/md-card-cli"
 [home]

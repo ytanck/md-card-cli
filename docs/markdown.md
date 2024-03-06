@@ -1,4 +1,4 @@
-Markdown 备忘清单
+Markdown 清单
 ===
 
 这是 Markdown 语法的快速参考备忘单。

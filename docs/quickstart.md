@@ -1,4 +1,4 @@
-Quick Start Cheatsheet
+Quick Start Card
 ===
 
 [![CI](https://github.com/ytanck/md-card-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/ytanck/md-card-cli/actions/workflows/ci.yml)
@@ -7,7 +7,7 @@ Quick Start Cheatsheet
 [![Repo Dependents](https://badgen.net/github/dependents-repo/ytanck/md-card-cli)](https://github.com/ytanck/md-card-cli/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/ytanck/md-card-cli)
 
-Here's a style reference you can use on your **Quick Start** cheat sheet!
+Here's a style reference you can use on your **Quick Start** !
 <!--rehype:style=padding-top: 12px;-->
 
 Getting Started
@@ -214,7 +214,7 @@ refs.config.cjs        refs.config.mjs
 Custom navigation menu
 
 ```ini
-REF_URL=http://ref.ecdata.cn/
+REF_URL=http://xxx.cn/
 REF_LABEL=网站首页
 ```
 

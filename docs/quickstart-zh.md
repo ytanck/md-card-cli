@@ -1,4 +1,4 @@
-Quick Reference 备忘清单
+Quick Start
 ===
 
 这是一个将markdown转换为卡片式html页面的命令行工具。
@@ -37,7 +37,7 @@ npm run start # 监听 md 文件编译输出 HTML
 ├── LICENSE
 ├── README.md  # 🌐 Home(首页)内容
 ├── dist       # 📦 编译后的静态资源目录
-├── docs       # 👈 Markdown 文档(速查表)
+├── docs       # 👈 Markdown 文档(卡片)
 │   ├── bash.md
 │   ├── ....
 │   └── yaml.md
@@ -46,15 +46,15 @@ npm run start # 监听 md 文件编译输出 HTML
 └── assets  # LOGO 图标文件资源
 ```
 
-### 添加一个备忘清单
+### 添加一个卡片
 
-一个简单的备忘清单包含 `页面大标题<h1>`，放在大标题下面的 `介绍` 文本，`<h2>` 分类标题，`<h3>` 内容为 `卡片`
+一个简单的卡片包含 `页面大标题<h1>`，放在大标题下面的 `介绍` 文本，`<h2>` 分类标题，`<h3>` 内容为 `卡片`
 
 ```markdown
-备忘清单 (页面大标题)
+卡片 (页面大标题)
 ===
 
-这是您可以在当前清单上使用的样式参考！备忘清单介绍
+这是您可以在当前清单上使用的样式参考！卡片介绍
 
 入门 (分类标题)
 ---
@@ -78,7 +78,7 @@ npm run start # 监听 md 文件编译输出 HTML
 <!--rehype:class=home-card-->
 ```
 
-首页导航图标存放在 `assets` 目录中，如果你的备忘清单定义为 `docs/cron.md`，那么你的图标就定义为 `cron.svg` 存放到 `assets` 目录中，重新编译首页当行菜单就拥有了图标。
+首页导航图标存放在 `assets` 目录中，如果你的卡片定义为 `docs/cron.md`，那么你的图标就定义为 `cron.svg` 存放到 `assets` 目录中，重新编译首页当行菜单就拥有了图标。
 
 - 图标存放在 [`assets`](https://github.com/ytanck/md-card-cli/blob/main/assets) 目录中
 - 图片名称与清单名称保持一致 `cron.md` -> `cron.svg` (注意大小写)
@@ -141,11 +141,11 @@ refs-cli@v0.0.1
 {
   "title": "文档网站名称",
   "description": "{{description}} 网站说明",
-  "keywords": "关键字,refs-cli,refs,cli",
+  "keywords": "关键字,cli",
   "data-info": "👆 helloworld",
   "search": {
     "label": "搜索",
-    "placeholder": "搜索备忘清单",
+    "placeholder": "搜索",
     "cancel": "取消"
   },
   "network": {
@@ -178,7 +178,7 @@ data-info = "👆 helloworld"
 
 [search]
   label = "搜索"
-  placeholder = "搜索备忘清单"
+  placeholder = "搜索"
   cancel = "取消"
 
 [network]
@@ -220,7 +220,7 @@ refs.config.cjs        refs.config.mjs
 导航菜单
 
 ```ini
-REF_URL=http://ref.ecdata.cn/
+REF_URL=http://xxx/
 REF_LABEL=网站首页
 ```
 
@@ -233,7 +233,7 @@ REF_FOOTER=备案号：沪ICP备xxxx
 修改版权信息 (支持 HTML 字符串)
 
 ```ini
-LICENSE=Copyright (c) <b>2022</b> 小弟调调™
+LICENSE=Copyright (c) <b>2022</b> ytanck
 ```
 
 在项目根目录中创建 <pur>**.env**</pur> 文件
@@ -244,7 +244,7 @@ Markdown 语法注释
 ### 介绍
 <!--rehype:wrap-class=row-span-2-->
 
-在备忘清单采用 `HTML 注释语法`，标识网站布局和一些样式，目的是为了在 `GitHub` 中也是正常毫无瑕疵的预览 [`Markdown`](./markdown.md)。
+在卡片采用 `HTML 注释语法`，标识网站布局和一些样式，目的是为了在 `GitHub` 中也是正常毫无瑕疵的预览 [`Markdown`](./markdown.md)。
 
 ```markdown
 ### 卡片标题
@@ -255,7 +255,7 @@ Markdown 语法注释
 ```
 <!--rehype:className=wrap-text-->
 
-上面基础示例，使用 `col-span-2` 类标识，卡片占 `2` 列位置，参考现有备忘清单的源代码是一个好习惯！
+上面基础示例，使用 `col-span-2` 类标识，卡片占 `2` 列位置，参考现有卡片的源代码是一个好习惯！
 
 ### 注释语法介绍
 <!--rehype:wrap-class=row-span-4&style=color:black;background-color: #d7a100;-->
