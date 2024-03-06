@@ -1,6 +1,6 @@
 {
   "title": "md-card-cli",
-  "description": "{{description}}. Sharing Quick Reference Cheat Sheets for Developers",
+  "description": "{{description}}. A command line tool to convert markdown to a card-html page !",
   "keywords": "md-card-cli,reference,refs-cli,markdown2html,html2card-cli",
   "data-info": "👆👆 click me",
   "search": {
@@ -16,7 +16,7 @@
     "url": "https://ytanck.github.io/reference"
   },
   "network": {
-    "label": "network",
+    "label": "Blog",
     "url": "https://baidu.com",
     "disabled": false
   },

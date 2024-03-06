@@ -9,28 +9,27 @@ md-card-cli
 一个将`markdown`转换为卡片式`html`页面的命令行工具。
 
 <!--rehype:ignore:start-->
-[![Quick Reference](https://user-images.githubusercontent.com/1680273/201931931-d8559417-0a15-46af-a009-ec1e56e5b778.png)](https://ytanck.github.io/reference)
+[![Quick Start](https://github.com/ytanck/md-card-cli/assets/69585768/4767ef11-4723-42a1-b4aa-0452265ce830)](./docs/quickstart-zh.md)
 <!--rehype:ignore:end-->
 
 ## Document
 
-[我的主标题1](./docs/quickstart.md)<!--rehype:style=background: rgb(92 107 192);&data-subtitle=我是副标题&class=info subtitle&data-info=👆helloworld-->   
-[我的主标题2](https://ytanck.github.io/reference/docs/quickstart.html)<!--rehype:style=background: rgb(139 170 229);&class=tag&data-tag=JavaScript-->   
-[我的主标题3](https://ytanck.github.io/reference/docs/quickstart.html)<!--rehype:style=background: rgb(139 170 229);&class=subtitle&data-subtitle=我是副标题-->   
+[中文文档](./docs/quickstart-zh.md)<!--rehype:style=background: rgb(92 107 192);&data-subtitle=我是中文文档&class=info subtitle&data-info=👆值得推荐的-->   
+[英文文档](./docs/quickstart.md)<!--rehype:style=background: rgb(92 107 192);&data-subtitle=我是英文文档&class=subtitle-->     
 <!--rehype:class=home-card-->
 
 ## Example Show
 
-[我是科目一](https://ytanck.github.io/reference/docs/bash.html)<!--rehype:style=background: rgb(72 143 223);&data-subtitle=我是副标题&class=info&data-info=👆click me !-->  
-[我是科目二](https://ytanck.github.io/reference/docs/c.html)<!--rehype:style=background: rgb(92 107 192);&class=info subtitle&data-subtitle=我是副标题-->  
-[我是科目三](https://ytanck.github.io/reference/docs/cs.html)<!--rehype:style=background: rgb(6 147 13);&class=tag&data-tag=108课时-->  
-[我是科目四](https://ytanck.github.io/reference/docs/cpp.html)<!--rehype:style=background: rgb(6 147 13);&class=tag&data-tag=经济-->  
-[我是科目五](https://ytanck.github.io/reference/docs/dart.html)<!--rehype:style=background: rgb(64 196 255);&class=subtitle&data-subtitle=详细信息请查看...-->  
-[我是科目六](https://ytanck.github.io/reference/docs/docker.html)<!--rehype:style=background: rgb(72 143 223);-->  
-[我是科目七](https://ytanck.github.io/reference/docs/dockerfile.html)<!--rehype:style=background: rgb(0 72 153);&class=tag&data-tag=标签1-->  
-[我是科目八](https://ytanck.github.io/reference/docs/djiango.html)<!--rehype:style=background: rgb(12 75 51);&class=info tag&data-tag=热门-->  
-[我是科目九](https://ytanck.github.io/reference/docs/flutter.html)<!--rehype:style=background-image: linear-gradient(to left, rgba(236 72 153 / var(\-\-bg\-opacity)), rgba(167 139 250 / var(\-\-bg\-opacity)));-->  
-[我是科目十](https://ytanck.github.io/reference/docs/golang.html)<!--rehype:style=background-image: linear-gradient(to left, rgba(74 222 128 / var(\-\-bg\-opacity)), rgba(59 130 246 / var(\-\-bg\-opacity)));&class=subtitle&data-subtitle=我是渐变背景色-->  
+[我是科目一](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(72 143 223);&data-subtitle=我是副标题&class=info&data-info=👆click me !-->  
+[我是科目二](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(92 107 192);&class=info subtitle&data-subtitle=我是副标题-->  
+[我是科目三](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(6 147 13);&class=tag&data-tag=108课时-->  
+[我是科目四](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(6 147 13);&class=tag&data-tag=经济-->  
+[我是科目五](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(64 196 255);&class=subtitle&data-subtitle=详细信息请查看...-->  
+[我是科目六](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(72 143 223);-->  
+[我是科目七](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(0 72 153);&class=tag&data-tag=标签1-->  
+[我是科目八](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(12 75 51);&class=info tag&data-tag=热门-->  
+[我是科目九](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background-image: linear-gradient(to left, rgba(236 72 153 / var(\-\-bg\-opacity)), rgba(167 139 250 / var(\-\-bg\-opacity)));-->  
+[我是科目十](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background-image: linear-gradient(to left, rgba(74 222 128 / var(\-\-bg\-opacity)), rgba(59 130 246 / var(\-\-bg\-opacity)));&class=subtitle&data-subtitle=我是渐变背景色-->  
 <!--rehype:class=home-card-->
 
 <!--rehype:ignore:start-->
@@ -66,7 +65,7 @@ Store `.refsrc.json` in the root directory of the project
 ```json
 {
   "title": "md-card-cli",
-  "description": "{{description}}. Sharing Quick Reference Cheat Sheets for Developers",
+  "description": "{{description}}. A command line tool to convert markdown to a card-html page !",
   "keywords": "reference-cli,reference,md-card-cli,html-cli,cli",
   "data-info": "👆click me !",
   "search": {
@@ -111,7 +110,7 @@ Support [JSON](https://www.json.org), [JSONC](https://github.com/microsoft/node-
 
 ```toml
 title = "md-card-cli"
-description = "{{description}}. A command line tool to convert markdown to a card-html page "
+description = "{{description}}. A command line tool to convert markdown to a card-html page !"
 keywords = "reference-cli,reference,md-card-cli,refs,cli"
 data-info = "👆click me"
 [search]
@@ -153,9 +152,9 @@ refs.config.cjs            refs.config.mjs
 <!--rehype:wrap-style=text-align: center;max-width: 650px;margin: 0 auto;&class=home-title-reset-->
 
 [baidu.com](https://baidu.com)<!--rehype:target=_blank-->
-[163.com](http://163.com)<!--rehype:target=_blank-->
 [github](https://github.com)<!--rehype:target=_blank-->
-[sina.com](http://sina.com)<!--rehype:target=_blank-->
+[youtube](http://youtube.com)<!--rehype:target=_blank-->
+[gitee](http://gitee.com)<!--rehype:target=_blank-->
 
 <!--rehype:class=home-card home-links-->
 

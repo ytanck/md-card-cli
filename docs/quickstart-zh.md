@@ -1,196 +1,202 @@
-Quick Start Cheatsheet
+Quick Reference 备忘清单
 ===
 
-[![CI](https://github.com/ytanck/md-card-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/ytanck/md-card-cli/actions/workflows/ci.yml)
-[![NPM version](https://img.shields.io/npm/v/md-card-cli.svg?style=flat)](https://www.npmjs.com/package/md-card-cli)
-[![Downloads](https://img.shields.io/npm/dm/md-card-cli.svg?style=flat)](https://www.npmjs.com/package/md-card-cli)
-[![Repo Dependents](https://badgen.net/github/dependents-repo/ytanck/md-card-cli)](https://github.com/ytanck/md-card-cli/network/dependents)
-[![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/ytanck/md-card-cli)
+这是一个将markdown转换为卡片式html页面的命令行工具。
 
-Here's a style reference you can use on your **Quick Start** cheat sheet!
-<!--rehype:style=padding-top: 12px;-->
-
-Getting Started
+入门
 ---
 
 
 
-#### Clone repository
+#### 克隆仓库
 
 ```shell
-git clone git@github.com:ytanck/reference.git
+git clone git@github.com:ytanck/md-card-cli.git
 ```
 <!--rehype:className=wrap-text -->
 
-#### Install dependencies to generate HTML pages
+#### 安装依赖编译生成 HTML 页面
 
 ```shell
-npm i         # install dependencies
-npm run build # Compile output HTML
+npm i         # 安装依赖
+npm run build # 编译输出 HTML
 ```
 
-The HTML is stored in the `dist` directory under the root directory of the warehouse, and the `dist/index.html` static page is opened in the browser for preview.
+HTML 存放在仓库根目录下的 `dist` 目录中，将 `dist/index.html` 静态页面在浏览器中打开预览。
 
 ```shell
-# Listen to the md file to compile and output HTML
-npm run start
+npm run start # 监听 md 文件编译输出 HTML
 ```
 
-### Directory Structure
+### 目录结构
 
 ```bash
 .
-├── CONTRIBUTING.md   # Contribution Note
+├── CONTRIBUTING.md   # 贡献说明
 ├── Dockerfile
 ├── LICENSE
-├── README.md  # 🌐 Home content
-├── dist # 📦 Compiled static resource directory
-├── docs # 👈 Markdown Documentation (cheatsheet)
+├── README.md  # 🌐 Home(首页)内容
+├── dist       # 📦 编译后的静态资源目录
+├── docs       # 👈 Markdown 文档(速查表)
 │   ├── bash.md
 │   ├── ....
 │   └── yaml.md
+├── .refsrc.json # refs 配置
 ├── package.json
-├── .refsrc.json # refs configuration
-└── assets  # LOGO icon file resource
+└── assets  # LOGO 图标文件资源
 ```
 
-### Add a checklist
+### 添加一个备忘清单
 
-A simple checklist contains `page headline <h1>`, `introduction` text placed below the headline, `<h2>` category headings, `<h3>` content for `cards`
+一个简单的备忘清单包含 `页面大标题<h1>`，放在大标题下面的 `介绍` 文本，`<h2>` 分类标题，`<h3>` 内容为 `卡片`
 
 ```markdown
-Cheatsheet (page title)
+备忘清单 (页面大标题)
 ===
 
-Here's a style reference you can use on your current listing! Cheat Sheet Introduction
+这是您可以在当前清单上使用的样式参考！备忘清单介绍
 
-Getting Started (Category Title)
+入门 (分类标题)
 ---
 
-### Introduction (card)
+### 介绍 (卡片)
 
-card content
+卡片内容
 ```
-<!--rehype:className=wrap-text-->
 
-The above markdown content is stored in the `docs` directory, named `xxx.md`
+上面 markdown 内容存放到 `docs` 目录中，命名为 `xxx.md`
 
-### Home Navigation
+### 首页导航
 <!--rehype:wrap-class=col-span-2-->
 
-The homepage (`README.md`) is stored in the root directory of the warehouse, and the homepage navigation is automatically generated through this `README.md`. The following is a navigation example:
+首页(`README.md`)存放在仓库的根目录，通过这个 `README.md` 自动生成首页导航，下面是导航实例：
 
 ```markdown
-## Linux commands
+## Linux 命令
 
 [Cron](./docs/cron.md)<!--rehype:style=background: rgb(239 68 68/var(\-\-bg\-opacity));-->
 <!--rehype:class=home-card-->
 ```
 
+首页导航图标存放在 `assets` 目录中，如果你的备忘清单定义为 `docs/cron.md`，那么你的图标就定义为 `cron.svg` 存放到 `assets` 目录中，重新编译首页当行菜单就拥有了图标。
 
-### Home prompt configuration
+- 图标存放在 [`assets`](https://github.com/ytanck/md-card-cli/blob/main/assets) 目录中
+- 图片名称与清单名称保持一致 `cron.md` -> `cron.svg` (注意大小写)
+- SVG 图标尺寸 `<svg height="1em" width="1em"`
+- SVG 图标颜色使用继承颜色值 `<svg fill="currentColor"`
+- 使用 `<!--rehype:class=home-card-->` 标识卡片样式
+
+### 首页提示配置
 
 ```markdown
-[Django](./docs/djiango.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=info-->
+[Django](./docs/django.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=info-->
 ```
 <!--rehype:className=wrap-text-->
 
-Add `info` class name, it will add `👆recormend` by default at the bottom of the card
+添加 `info` 类名，会在卡片下方默认添加 `👆recommend`
 
 ```markdown
-class=tag&data-info=👆See what's missing?
+class=tag&data-info=👆看看还缺点儿什么？
 ```
 
-The above example changes the default prompt to:`👆See what's missing?`
+上面示例将默认提示更改为： `👆看看还缺点儿什么？`
 
 ```markdown
-[Django](./docs/djiango.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=tag&data-tag=Python-->
+[Django](./docs/django.md)<!--rehype:style=background: rgb(12 75 51/var(\-\-bg\-opacity));&class=tag&data-lang=Python-->
 ```
 <!--rehype:className=wrap-text-->
 
-Add `class=tag&data-tag=Python` class name and parameters, it will be marked _`Python`_ in the upper right corner of the card
+添加 `class=tag&data-lang=Python` 类名和参数，会在卡片右上角标记 _`Python`_
 
-### Command Help
+### 命令帮助
 
 ```bash
-Usage: md-card-cli [output-dir] [--help|h]
+Usage: refs-cli [output-dir] [--help|h]
 
-  Displays help information.
+  显示帮助信息
 
 Options:
 
-  --version, -v   Show version number
-  --help, -h      Displays help information.
-  --watch, -w     Watch and compile Markdown files.
-  --output, -o    Output directory. defalut(dist)
-  --force, -f     Force file regeneration.
+  --version, -v 显示版本号
+  --help, -h    显示帮助信息
+  --watch, -w   观看并编译 Markdown 文件
+  --output, -o  输出目录。默认（分布）
+  --force, -f   强制文件重新生成
 
 Example:
 
-  $ npx md-card-cli
-  $ md-card-cli --watch
-  $ md-card-cli --output website
-  $ md-card-cli
+  $ npx refs-cli
+  $ refs-cli --watch
+  $ refs-cli --output website
+  $ refs-cli
 
-md-card-cli@v0.0.1
+refs-cli@v0.0.1
 ```
 
-### Config
+### 配置 Config
 
-Store `.refsrc.json` in the root directory of the project
+将 `.refsrc.json` 存放在项目的根目录下
 
 ```json
 {
-  "title": "Quick Start",
-  "description": "{{description}}. A command line tool to convert markdown to a card-html page !",
-  "keywords": "reference-cli,reference,md-card-cli,refs,cli",
-  "data-info": "👆👆recommend!",
+  "title": "文档网站名称",
+  "description": "{{description}} 网站说明",
+  "keywords": "关键字,refs-cli,refs,cli",
+  "data-info": "👆 helloworld",
   "search": {
-    "label": "Search",
-    "placeholder": "Search for cheatsheet",
-    "cancel": "Cancel"
+    "label": "搜索",
+    "placeholder": "搜索备忘清单",
+    "cancel": "取消"
   },
   "network": {
-    "label": "Blog",
-    "url": "你的网站"
+    "label": "网站",
+    "url": "https://<你的网站>"
   },
   "github": {
-    "url": "https://github.com/ytanck/md-card-cli"
+    "url": "https://<github url>"
   },
   "home": {
-    "label": "Home",
-    "url": "https://ytanck.github.io/md-card-cli"
+    "label": "首页",
+    "url": "https://<你的网站>"
   },
-  "footer": "<br />备案号：<a href=\"#\">沪ICP备xxxx号-1</a>",
-  "license": "Support for HTML strings"
+  "footer": "<br />备案号：支持HTML字符串",
+  "license": "支持 HTML 字符串"
 }
 ```
 
-Support [JSON](https://www.json.org), [JSONC](https://github.com/microsoft/node-jsonc-parser), [JSON5](https://json5.org/), [YAML](https://yaml.org/), [TOML](https://toml.io), [INI](https://en.wikipedia.org/wiki/INI_file), [CJS](http://www.commonjs.org), [Typescript](https://www.typescriptlang.org/), and ESM config load.
+支持 [JSON](https://www.json.org), [JSONC](https://github.com/microsoft/node-jsonc-parser), [JSON5](https://json5.org/), [YAML](https://yaml.org/), [TOML](https://toml.io), [INI](https://en.wikipedia.org/wiki/INI_file), [CJS](http://www.commonjs.org), [Typescript](https://www.typescriptlang.org/), 和 ESM 配置加载。
 
-### `TOML` config example:
+### `TOML` 配置示例
+
+将 `.refsrc.toml` 存放在项目的根目录下
 
 ```toml
-title = "Refs CLI"
-description = "{{description}}. A command line tool to convert markdown to a card-html page !"
-keywords = "reference-cli,reference,md-card-cli,refs,cli"
-data-info = "👆👆recommend!"
+title = "Refs CLI 文档网站名称"
+description = "{{description}}. 网站说明"
+keywords = "关键字,md-card-cli,refs-cli,cli"
+data-info = "👆 helloworld"
+
 [search]
-  label = "Search"
-  placeholder = "Search for cheatsheet"
-  cancel = "Cancel"
+  label = "搜索"
+  placeholder = "搜索备忘清单"
+  cancel = "取消"
 
 [network]
-  label = "Blog"
-  url = "你的网站"
+  label = "网站"
+  url = "https://<你的网站>"
+
 [github]
-  url = "https://github.com/ytanck/md-card-cli"
+  url = "<github url>"
+
 [home]
-  label = "Home"
-  url = "https://ytanck.github.io/md-card-cli"
+  label = "首页"
+  url = "https://<你的网站>"
+
+footer = "<br />备案号：支持HTML字符串"
+license = "支持 HTML 字符串"
 ```
 
-### Support for more config loading
+### 支持更多配置加载
 
 ```bash
 .refsrc                .refsrc.json
@@ -209,110 +215,107 @@ refs.config.js         refs.config.ts
 refs.config.cjs        refs.config.mjs
 ```
 
-### Environment Variable
+### 环境变量
 
-Custom navigation menu
+导航菜单
 
 ```ini
 REF_URL=http://ref.ecdata.cn/
 REF_LABEL=网站首页
 ```
 
-Footer added (Support for HTML strings)
+页脚添加 (支持 HTML 字符串)
 
 ```ini
-REF_FOOTER= <br/>备案号：沪ICP备xxxx
+REF_FOOTER=备案号：沪ICP备xxxx
 ```
-<!--rehype:className=wrap-text-->
 
-Modify copyright information (HTML strings are supported)
+修改版权信息 (支持 HTML 字符串)
 
 ```ini
-LICENSE=Copyright (c) <b>2023</b> Support for HTML strings
+LICENSE=Copyright (c) <b>2022</b> 小弟调调™
 ```
-<!--rehype:className=wrap-text-->
 
-Create `.env` file in project root directory.
+在项目根目录中创建 <pur>**.env**</pur> 文件
 
-Markdown Comments Syntax
+Markdown 语法注释
 ---
 
-### Introduce
+### 介绍
 <!--rehype:wrap-class=row-span-2-->
 
-The `HTML comment syntax` is used in the cheat list to identify the website layout and some styles, the purpose is to preview normally and flawlessly in `GitHub` [`Markdown`](./markdown.md).
+在备忘清单采用 `HTML 注释语法`，标识网站布局和一些样式，目的是为了在 `GitHub` 中也是正常毫无瑕疵的预览 [`Markdown`](./markdown.md)。
 
 ```markdown
-### Card Title
+### 卡片标题
 <!--rehype:wrap-class=col-span-2-->
 
-Card Markdown content display, the following comment syntax changes the style for the text content
+卡片 Markdown 内容展示，下面注释语法为文字内容改变样式
 <!--rehype:style=color: red;-->
 ```
 <!--rehype:className=wrap-text-->
 
-The basic example above uses the `col-span-2` class logo, and the card occupies the `2` column position. It is a good habit to refer to the source code of the existing cheat list!
+上面基础示例，使用 `col-span-2` 类标识，卡片占 `2` 列位置，参考现有备忘清单的源代码是一个好习惯！
 
-### An introduction to annotation syntax
+### 注释语法介绍
 <!--rehype:wrap-class=row-span-4&style=color:black;background-color: #d7a100;-->
 
-- Add HTML comments below or after a [`Markdown`](./markdown.md) syntax
-- Start with `<!--rehype:`, end with `-->`, wrap the parameter content
-- The content adopts the character splicing method of the URL parameter
+- 在某个 [`Markdown`](./markdown.md) 语法下方或者后面，添加 HTML注释
+- 以 `<!--rehype:` 开始，`-->` 结束，包裹参数内容
+- 内容采用 URL 参数的字符拼接方式
 
-#### Syntax
+#### 语法
 
 `<!--rehype:` _+_ `key=value` _+_ **`&`** _+_ `key=value` _+_ `-->`  
-`Mark Start` + `parameter:value` + `Delimiter(&)` + `parameter:value`  + `Mark End`
+`标识开始` + `参数` + `分隔符(&)` + `参数`  + `标识结束`
 
-#### Example
+#### 示例
 
 ```markdown
-## Section H2
+## H2 部分
 <!--rehype:body-class=cols-2-->
 
-### Section H3
+### H3 部分
 <!--rehype:wrap-class=row-span-2-->
 ```
 
-#### Example, three placeholders, title red
+#### 示例，三行占位，标题红色
 
 ```markdown
-### Title
+### 标题
 <!--rehype:wrap-class=row-span-3&style=color:red;-->
 ```
 <!--rehype:className=wrap-text-->
 
-#### Parameter Description
+#### 参数说明
 
-className | description
+类 | 说明
 ---- | ----
-`body-style` | Wraps all card `Warpper` styles
-`body-class` | For card bar layout, add `class` name
-`wrap-style` | Add [CSS](./css.md) style to card bar
-`wrap-class` | For card placeholder, add `class` name
-<!--rehype:className=left-align show-header-->
+`body-style` | 包裹所有卡片`外壳`的样式
+`body-class` | 用于卡片栏布局，添加`类`名
+`wrap-style` | 卡片栏添加 [CSS](./css.md) 样式
+`wrap-class` | 用于卡片占位，添加`类`名
 
-### Text Color
+### 文字颜色
 
 ```markdown
-_I am red_<!--rehype:style=color: red;-->
-**bold red**<!--rehype:style=color: red;-->
+_我是红色_<!--rehype:style=color: red;-->
+**加粗红色**<!--rehype:style=color: red;-->
 ```
 
-Add a comment style above, the text _I am red_<!--rehype:style=color: red;--> the text becomes `red`
+上面添加注释样式，文字 _我是红色_<!--rehype:style=color: red;--> 文字变`红`了
 
-### Font Size
+### 文字大小
 
 ```markdown
-**bold red**
+**加粗变大红色**
 <!--rehype:style=color: red;font-size: 18px-->
 ```
 <!--rehype:className=wrap-text-->
 
-Add a comment style above, the text _bold becomes bigger red_<!--rehype:style=color: red;font-size: 18px--> becomes `red` and `big`
+上面添加注释样式，文字 _加粗变大红色_<!--rehype:style=color: red;font-size: 18px--> 变`红`并且`大`了
 
-### Forced line break
+### 强制换行
 
 ```markdown
 \```js
@@ -321,20 +324,20 @@ function () {}
 <!--rehype:className=wrap-text-->
 ```
 
-If the content of the code block is too long, use the forced line break class (`wrap-text`) to solve
+如果代码块内容太长，使用强制换行类(`wrap-text`)解决
 
-### Show table header
+### 展示表格表头
 
 ```markdown
-Key   | value
-:---- | --
-`Key` | value
+| Key | value | 
+| ---- | ---- |
+| `键` | 值    |
 <!--rehype:className=show-header-->
 ```
 
-The annotation configuration adds the `show-header` class, placed under the table, the header will be displayed.
+注释配置添加 `show-header` 类，放置在表格下面，表头将被展示出来。
 
-### Code line highlighting
+### 代码行高亮
 <!--rehype:wrap-class=row-span-2-->
 
 ```jsx {1,4-5}
@@ -346,112 +349,111 @@ export const Student = (
 );
 ```
 
-The lines above `{1,4-5}` are highlighted, and the following is [`Markdown`](./markdown.md) code example
+上面 `{1,4-5}` 行代码高亮，下面是 [`Markdown`](./markdown.md) 代码示例
 
 ```markdown
   ```jsx {1,4-5}
 ```
 
-Code line highlighting can be used together with code line numbers.
+代码行高亮可以和代码行号一起使用。
 
 ### Tooltips
 
-> [When the mouse moves over it, there is a hint](https://github.com/ytanck/reference) _Tip content of Tooltips_<!--rehype:tooltips-->
+[鼠标移动到上面有提示](https://github.com/ytanck/md-card-cli) _Tooltips 的提示内容_<!--rehype:tooltips-->
 
-Add annotation configuration `<!--rehype:tooltips-->` to add a Tooltips hint.
+添加注释配置 `<!--rehype:tooltips-->` 添加一个 Tooltips 提示。
 
-### H3 section (card) background color
+### H3 部分(卡片)背景颜色
 <!--rehype:wrap-style=background: #8dffd42e;-->
 
 ```markdown
-### H3 section (card) background color
+### H3 部分(卡片)背景颜色
 <!--rehype:wrap-style=background: #8dffd42e;-->
 ```
 <!--rehype:className=wrap-text -->
 
-### Red title
+### 红色标题
 <!--rehype:style=background:#e91e63;-->
 
 ```markdown
-### Red title
+### 红色标题
 <!--rehype:style=background:#e91e63;-->
 ```
 
-Add a style annotation `<!--rehype:style=background:#e91e63;-->` below the H3 heading
+在 H3 标题下面添加样式标注 `<!--rehype:style=background:#e91e63;-->`
 
-### Shortcut key style
+### 快捷键样式
 
 | Key | value |
 | ---- | ---- |
-| `Shortcuts` | directions |
-| `Shortcuts` | directions |
+| `快捷键` | 说明    |
+| `快捷键` | 说明    |
 <!--rehype:className=shortcuts-->
 
-Add the `<!--rehype:className=shortcuts-->` style class to the list to display the shortcut key style.
+列表添加 `<!--rehype:className=shortcuts-->` 样式类，展示快捷键样式。
 
-### Code line number
+### 代码行号
 
 ```jsx showLineNumbers
-export const Student = <div>Student</div>;
-const school = <div>School</div>;
+export const Student = <div>学生</div>;
+const school = <div>学校</div>;
 ```
 
-Here is a `Markdown` code example
+下面是 `Markdown` 代码示例
 
 ```markdown
   ```jsx showLineNumbers
 ```
 
-Add the `showLineNumbers` flag after the markup language
+标记语言后面添加 `showLineNumbers` 标识
 
-### Built-in class style
+### 内置类样式
 
 :- | -
 :- | -
-`shortcuts` | shortcut key style
-`wrap-text` | beyond newline
-`show-header` | display header
-`style-none` | Hide `<ul>` list styles
-`style-list` | `<table>` cell row display
+`shortcuts` | 快捷键样式
+`wrap-text` | 超出换行
+`show-header` | 展示表头
+`style-none` | 隐藏 `<ul>` 列表样式
+`style-list` | `<table>` 单元格行展示
 <!--rehype:className=shortcuts-->
 
-### Color Element
+### 颜色标签
 
 :- | -
 :- | -
-`<yel>` | <yel>Yellow</yel>
-`<red>` | <yel>Red</yel>
-`<pur>` | <pur>Purple</pur>
-`<code>` Or <code>\`\`</code> | <code>Green</code>`Color`
-`<del>` Or `~~delete~~` | <del>~~Red Color~~</del>
+`<yel>` | <yel>黄色</yel>
+`<red>` | <red>红色</red>
+`<pur>` | <pur>紫色</pur>
+`<code>` 或 <code>\`\`</code> | <code>绿</code>`色`
+`<del>` 或 `~~删除~~` | <del>~~红色~~</del>
 <!--rehype:className=shortcuts-->
 
-### HTML code preview
+### HTML 代码预览
 
 ```
   ```html preview
-  <b>Here is your HTML code</b>
+  <b>这里是你的 HTML 代码</b>
   \```
 ```
 
 ---
 
 ```html preview
-<b>Here is your HTML code</b>
+<b>这里是你的 HTML 代码</b>
 ```
 
-The above [`markdown`](./markdown.md) code adds the `preview` flag in the `meta` position, and the [HTML](./html.md) code will be executed to preview
+上面的 [`markdown`](./markdown.md) 代码在 `meta` 位置添加 `preview` 标识，[HTML](./html.md) 代码将被执行预览
 
-### Hide card title
+### 隐藏卡片标题
 <!--rehype:style=display:none;&wrap-style=padding-top: 0;-->
 
 ```
-Hide card title, add comment style below H3 title
+隐藏卡片标题，在 H3 标题下面添加注释样式
 ```
-<!--rehype:className=wrap-text-->
 
 ```markdown {2}
-### Hide card title
+### 隐藏卡片标题
 <!--rehype:style=display:none;&wrap-style=padding-top: 0;-->
 ```
 <!--rehype:className=wrap-text -->
@@ -471,6 +473,7 @@ Hide card title, add comment style below H3 title
 `<!--rehype:className=style-none-->` | \<li> 没有标记样式
 `<!--rehype:className=style-timeline-->` | `时间轴`样式
 `<!--rehype:className=style-arrow-->` | `箭头`标记
+<!--rehype:className=left-align-->
 
 ### KaTeX 数学渲染
 
@@ -830,7 +833,6 @@ H2 部分
 `R` | Rectangle
 `O` | Oval
 `U` | Rounded
-<!--rehype:className=shortcuts-->
 
 ### 展示标题
 
@@ -1058,17 +1060,17 @@ H3 部分 - 占位效果展示
 ...
 ```
 
-### Card child
+### 卡片子项
 
-Each section can have the following subitems:
+每个部分可以有以下子项：
 
-#### H4 subheading
+#### H4 子标题
 
 - pre
 - table
 - ul
 
-#### H4 subheading
+#### H4 子标题
 
 - pre
 - table
