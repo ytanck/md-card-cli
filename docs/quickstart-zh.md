@@ -3,6 +3,7 @@ Quick Start
 
 这是一个将markdown转换为卡片式html页面的命令行工具。
 
+
 入门
 ---
 
@@ -150,6 +151,7 @@ refs-cli@v0.0.1
   },
   "network": {
     "label": "网站",
+    "disabled": true,
     "url": "https://<你的网站>"
   },
   "github": {
@@ -183,6 +185,7 @@ data-info = "👆 helloworld"
 
 [network]
   label = "网站"
+  disabled = false
   url = "https://<你的网站>"
 
 [github]

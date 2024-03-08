@@ -18,7 +18,7 @@
   "network": {
     "label": "Blog",
     "url": "https://baidu.com",
-    "disabled": false
+    "disabled": true
   },
   "giscus": {
     "src": "https://giscus.app/client.js",

@@ -10,6 +10,14 @@ body {
     'Segoe UI Emoji';
 }
 
+.qrcode {
+  display: none;
+  vertical-align: top;
+}
+.hover-show:hover+.qrcode{
+  display: block;
+}
+
 ::-webkit-scrollbar {
   background: transparent;
   width: 8px;
@@ -483,7 +491,7 @@ body.home .max-container a.home-button:visited:hover {
   gap: 0.5rem;
   cursor: pointer;
   border-radius: 0.5rem;
-  padding: 0rem 1rem .5rem;
+  padding: 0rem 1rem .6rem;
   height: 6rem;
   box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   color: var(--color-fg-default);
@@ -500,7 +508,7 @@ body.home .max-container a.home-button:visited:hover {
   display: block;
   position: absolute;
   font-size: 12px;
-  bottom: .8rem;
+  bottom: 1rem;
   max-width: 90%;
   height: 1rem;
   line-height: 1rem;

@@ -16,19 +16,21 @@ md-card-cli
 
 [中文文档](./docs/quickstart-zh.md)<!--rehype:style=background: rgb(92 107 192);&data-subtitle=我是中文文档&class=info subtitle&data-info=👆值得推荐的-->   
 [英文文档](./docs/quickstart.md)<!--rehype:style=background: rgb(92 107 192);&data-subtitle=我是英文文档&class=subtitle-->     
+[test](./docs/test.md)<!--rehype:style=background: rgb(92 107 192);-->  
+
 <!--rehype:class=home-card-->
 
 ## Example Show
 
-[我是科目一](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(72 143 223);&data-subtitle=我是副标题&class=info&data-info=👆click me !-->  
-[我是科目二](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(92 107 192);&class=info subtitle&data-subtitle=我是副标题-->  
-[我是科目三](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(6 147 13);&class=tag&data-tag=108课时-->  
-[我是科目四](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(6 147 13);&class=tag&data-tag=经济-->  
-[我是科目五](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(64 196 255);&class=subtitle&data-subtitle=详细信息请查看...-->  
-[我是科目六](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(72 143 223);-->  
-[我是科目七](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(0 72 153);&class=tag&data-tag=标签1-->  
-[我是科目八](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(12 75 51);&class=info tag&data-tag=热门-->  
-[我是科目九](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background-image: linear-gradient(to left, rgba(236 72 153 / var(\-\-bg\-opacity)), rgba(167 139 250 / var(\-\-bg\-opacity)));-->  
+[科目一](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(72 143 223);&data-subtitle=我是副标题&class=info&data-info=👆click me !-->  
+[科目二](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(92 107 192);&class=info subtitle&data-subtitle=我是副标题-->  
+[科目三](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(6 147 13);&class=tag&data-tag=108课时-->  
+[科目四](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(6 147 13);&class=tag&data-tag=经济-->  
+[科目五](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(64 196 255);&class=subtitle&data-subtitle=详细信息请查看...-->  
+[科目六](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(72 143 223);-->  
+[科目七](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(0 72 153);&class=tag&data-tag=标签1-->  
+[科目八](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background: rgb(12 75 51);&class=info tag&data-tag=热门-->  
+[科目九](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background-image: linear-gradient(to left, rgba(236 72 153 / var(\-\-bg\-opacity)), rgba(167 139 250 / var(\-\-bg\-opacity)));-->  
 [我是科目十](https://ytanck.github.io/reference/docs/test.html)<!--rehype:style=background-image: linear-gradient(to left, rgba(74 222 128 / var(\-\-bg\-opacity)), rgba(59 130 246 / var(\-\-bg\-opacity)));&class=subtitle&data-subtitle=我是渐变背景色-->  
 <!--rehype:class=home-card-->
 
@@ -75,7 +77,8 @@ Store `.refsrc.json` in the root directory of the project
   },
   "network": {
     "label": "Blog",
-    "url": "site"
+    "url": "site",
+    "disabled": false
   },
   "github": {
     "url": "https://github.com/ytanck/md-card-cli"
@@ -122,6 +125,7 @@ data-info = "👆click me"
 [network]
   label = "Blog"
   url = "site"
+  disabled = false
 [github]
   url = "https://github.com/ytanck/md-card-cli"
 [home]
