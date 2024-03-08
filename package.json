@@ -1,6 +1,6 @@
 {
   "name": "md-card-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Command line tool to convert markdown to a card-html website.",
   "homepage": "https://github.com/ytanck/md-card-cli/",
   "author": "ytanck",
