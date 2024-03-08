@@ -16,6 +16,9 @@ export async function copyCSSFile(options: Options) {
 export async function copyJSFile(options: Options) {
   await fs.copy(path.resolve(options.static_path, './js'), path.resolve(options.output, 'js'));
 }
+export async function copyAssetsFile(options: Options) {
+  await fs.copy(path.resolve(process.cwd(), './assets'), path.resolve(options.output, 'assets'));
+}
 
 export interface Config {
   title?: string;
@@ -64,6 +67,7 @@ export async function run(options: Options) {
     await fs.writeFile(path.relative(options.output, 'data.json'), '[]');
     await copyCSSFile(options);
     await copyJSFile(options);
+    await copyAssetsFile(options);
     await fs.writeFile(path.resolve(options.output, 'data.js'), `const REFS_DATA = []`);
     const files = await recursiveReaddirFiles(process.cwd(), {
       ignored: /[\\/](node_modules|\.git)/g,
